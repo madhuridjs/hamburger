@@ -1,0 +1,225 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+    background-color: #84ffff;
+}
+/**
+*Sidebar-Left*
+**/
+.sidebar-left{
+    width: 250px;
+    height: 100%;
+    background-color: #ffcdd2;
+    position: fixed;
+    left: -250px;
+    transition: all 0.5s ease;
+} 
+.sidebar-left header{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background:#880e4f;
+    user-select: none;
+    line-height: 50px;
+}
+#leftcheck{
+    display: none;
+
+}
+label .ham_left,
+label .left_cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label .ham_left{
+    color: white;
+    left: 100px;
+    font-size: 30px;
+    top: 20px;
+    transition: all 0.5s;
+}
+label .left_cancel{
+    z-index: 1111;
+    color: white;
+    left: -200px;
+    font-size: 20px;
+    top: 15px;
+    transition: all 0.5s ease;
+}
+#leftcheck:checked ~ .sidebar-left {
+    left: 0;    
+
+}
+#leftcheck:checked ~ label .ham_left {
+    left: 250px;
+    opacity: 0;    
+
+}
+#leftcheck:checked ~ label .left_cancel{
+    left: 200px;
+}
+
+/**
+*SideBar Right*
+*/
+.sidebar-right{
+    width: 250px;
+    height: 100%;
+    background-color:#ffeb3b;
+    position: fixed;
+    right: -250px;
+    transition: all 0.5s ease ;
+} 
+.sidebar-right header{
+    font-size: 20px;
+    background: #ff8f00;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+#rightcheck{
+    display: none;
+}
+label .ham_right,
+label .right_cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label .ham_right{
+    color: white;
+    right: 100px;
+    font-size: 30px;
+    top: 20px;
+    transition: all 0.5s;
+}
+label .right_cancel{
+    z-index: 1111;
+    color: white;
+    right: -200px;
+    font-size: 20px;
+    top: 15px;    
+    transition: all 0.5s ease ;
+}
+#rightcheck:checked ~ .sidebar-right{
+    right: 0;
+}
+#rightcheck:checked ~ label .ham_right{
+    right: 250px;
+    opacity: 0;  
+}
+#rightcheck:checked ~ label .right_cancel{
+    right: 200px;
+}
+/**
+*TopBar*
+**/
+
+.sidebar-top{
+    width: 100%;
+    height: 130px;
+    background-color:#4fc3f7;
+    position: fixed;
+    top: -250px;
+    transition: all 0.5s ease ;
+}
+.sidebar-top header{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #0d47a1;
+} 
+#topcheck{
+    display: none;
+}
+label .ham_top,
+label .top_cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label .ham_top{
+    position: absolute;
+    right: 200px;
+    left: 600px;
+    top: 20px;
+    color: white;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+label .top_cancel{
+    z-index: 1111;
+    position: absolute;
+    right: -40px;
+    top: 12px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease ;
+}
+#topcheck:checked ~ .sidebar-top{
+    top: 0;
+}
+#topcheck:checked ~ label .ham_top{
+    top: 250px;
+    opacity: 0; 
+}
+#topcheck:checked ~ label .top_cancel{
+    right: 40px;   
+}
+/**
+*BottomBar*
+**/
+
+.sidebar-bottom{
+    width: 100%;
+    height: 130px;
+    background-color:#cddc39;
+    position: fixed;
+    bottom: -250px;
+    transition: all 0.5s ease ;
+}
+.sidebar-bottom header{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    background-color:#2e7d32;
+} 
+#bottomcheck{
+    display: none;
+}
+label .ham_bottom,
+label .bottom_cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label .ham_bottom{
+    position: absolute;
+    right: 200px;
+    left: 600px;
+    bottom: 20px;
+    color: white;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+label .bottom_cancel{
+    z-index: 1111;
+    position: absolute;
+    right: -40px;
+    Bottom: 90px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease ;
+}
+#bottomcheck:checked ~ .sidebar-bottom{
+    bottom: 0;
+}
+#bottomcheck:checked ~ label .ham_bottom{
+    bottom: 250px;
+    opacity: 0; 
+}
+#bottomcheck:checked ~ label .bottom_cancel{
+    right: 40px;   
+}
+
